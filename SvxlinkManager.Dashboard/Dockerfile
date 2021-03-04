@@ -1,6 +1,13 @@
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim AS base
+
+# création de variable d'environnement utilisées durant l'installation
+ENV TZ=Europe/Kiev
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+RUN apt-get update && apt-get install -qq -y svxlink-server procps network-manager && apt-get clean 
+
 WORKDIR /app
 EXPOSE 80
 
