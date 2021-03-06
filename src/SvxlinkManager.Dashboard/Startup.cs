@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+using SvxlinkManager.Common.Service;
 using SvxlinkManager.Dashboard.Data;
 
 using System;
@@ -29,7 +30,7 @@ namespace SvxlinkManager.Dashboard
     {
       services.AddRazorPages();
       services.AddServerSideBlazor();
-      services.AddSingleton<WeatherForecastService>();
+      services.AddSingleton<SvxlinkServiceBase>();
       services.AddApplicationInsightsTelemetry(Configuration["APPINSIGHTS_CONNECTIONSTRING"]);
     }
 
