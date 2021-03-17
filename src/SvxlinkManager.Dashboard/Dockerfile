@@ -25,4 +25,5 @@ RUN dotnet publish "SvxlinkManager.Dashboard.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+RUN chmod 777 /app/SvxlinkConfig/svxlink.conf
 ENTRYPOINT ["dotnet", "SvxlinkManager.Dashboard.dll"]
