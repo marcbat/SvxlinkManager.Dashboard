@@ -2,7 +2,7 @@
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0-focal AS base
 
-# création de variable d'environnement utilisées durant l'installation
+# crÃ©ation de variable d'environnement utilisï¿½es durant l'installation
 ENV TZ=Europe/Kiev
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
