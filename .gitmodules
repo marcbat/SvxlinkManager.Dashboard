@@ -1,0 +1,3 @@
+[submodule "src/submodules/SvxlinkManager.Common"]
+	path = src/submodules/SvxlinkManager.Common
+	url = https://github.com/marcbat/SvxlinkManager.Common
