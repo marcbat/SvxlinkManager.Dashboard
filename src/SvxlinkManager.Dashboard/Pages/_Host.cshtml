@@ -10,7 +10,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard</title>
+  <title>Tableau de bord :: Salon Suisse Romand</title>
   <base href="~/" />
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
   <link href="SvxlinkManager.Dashboard.styles.css" rel="stylesheet" />
@@ -20,9 +20,13 @@
   <script src="~/js/popper.min.js"></script>
   <script src="~/js/bootstrap/bootstrap.min.js"></script>
 
+  <script src="~/js/tooltip.js"></script>
 </head>
 <body>
   <component type="typeof(App)" render-mode="ServerPrerendered" />
+
+  <div id="toasts" style="position: absolute; bottom: 0; right: 0; margin-bottom: 10px; margin-right: 10px;">
+  </div>
 
   <div id="blazor-error-ui">
     <environment include="Staging,Production">
