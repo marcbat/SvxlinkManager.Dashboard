@@ -61,10 +61,8 @@ namespace SvxlinkManager.Dashboard
         var channel = new ChannelBase { Name = "Salon Suisse Romand" };
 
         var svxlinkservice = serviceScope.ServiceProvider.GetRequiredService<SvxlinkServiceBase>();
-        if (env.IsDevelopment())
-          svxlinkservice.StartSvxlink(channel, pidFile: "/var/run/svxlink.pid", runAs: "root", configFile: $"{applicationPath}/SvxlinkConfig/svxlink.conf");
-        else
-          svxlinkservice.StartSvxlink(channel, pidFile: "/var/run/svxlink.pid", runAs: "root");
+
+        svxlinkservice.StartSvxlink(channel, pidFile: "/var/run/svxlink.pid", runAs: "root", configFile: $"{applicationPath}/SvxlinkConfig/svxlink.conf");
       }
 
       app.UseStaticFiles();
