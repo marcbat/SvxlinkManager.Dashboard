@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SvxlinkManager.Dashboard", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "submodules", "submodules", "{65DD275E-0B0B-43CE-A7F8-AC67ED1AA872}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SvxlinkManager.Common", "src\submodules\SvxlinkManager.Common\src\SvxlinkManager.Common\SvxlinkManager.Common.csproj", "{37806E5A-E901-45A5-B53C-26BB579369BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,9 +19,16 @@ Global
 		{AEF1E738-5D3B-4E73-B383-796C4726CA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEF1E738-5D3B-4E73-B383-796C4726CA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEF1E738-5D3B-4E73-B383-796C4726CA18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37806E5A-E901-45A5-B53C-26BB579369BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37806E5A-E901-45A5-B53C-26BB579369BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37806E5A-E901-45A5-B53C-26BB579369BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37806E5A-E901-45A5-B53C-26BB579369BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{37806E5A-E901-45A5-B53C-26BB579369BB} = {65DD275E-0B0B-43CE-A7F8-AC67ED1AA872}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D0C8A4D-D6FF-444F-A6AA-65636A5316FC}
